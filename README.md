@@ -1,4 +1,4 @@
-# NASDAQ-Closing-Stock-Price-Prediction
+# NASDAQ Closing Stock Price Prediction
 Final Project - 15.072 Advanced Analytics Edge @MIT
 
 Project Members: [Zeki Yan](https://www.linkedin.com/in/zikaiyan/), [Meredith Gao](https://www.linkedin.com/in/mingtian-gao-484749290/), [Lucas Goh](https://www.linkedin.com/in/lucas-goh/), [Tim Zhou](https://www.linkedin.com/in/dingyi-zhou/)
