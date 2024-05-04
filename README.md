@@ -14,6 +14,7 @@ Project Members: [Zeki Yan](https://www.linkedin.com/in/zikaiyan/), [Meredith Ga
 - [Prediction Models](#Prediction-Models)
 - [Results and Analysis](#results-and-analysis)
 - [Business Impact](#Business-Impact)
+- [References](#References)
 - [Appendix](#Appendix)
 
 ## Introduction
@@ -97,6 +98,13 @@ The above figure illustrates the comparison between the actual target values for
 ## Business Impact
 
 Closing prices are critical for investors, analysts, and market stakeholders, serving as key indicators for assessing securities' performance and understanding the broader market. Our model enhances this aspect by effectively consolidating signals from auctions and order books, offering a more accurate market snapshot. The prediction results help reduce information asymmetry, aiding informed decision-making and enhancing market transparency. Moreover, our model goes beyond supply and demand dynamics, enabling rational, well-informed trading strategies. It not only aids individual investors but also contributes to financial markets' overall integrity and functioning.
+
+## References
+
+1. [Nasdaq Closing Cross Frequently Asked Questions](https://nasdaqtrader.com/content/productsservices/trading/crosses/openclose_faqs.pdf)
+2. [The Nasdaq Opening and Closing Crosses Frequently Asked Questions](https://www.nasdaq.com/docs/2020/04/03/openclose_faqs.pdf)
+3. Wu, Yanbin. "Closing auction, passive investing, and stock prices" Passive Investing, and Stock Prices (August 15, 2019) (2019).
+4. Bogousslavsky, Vincent, and Dmitriy Muravyev. ``Who trades at the close? Implications for price discovery and liquidity.'' Journal of Financial Markets (2023): 100852.
 
 ## Appendix
 
