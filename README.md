@@ -31,7 +31,7 @@ Our dataset provides historical data for the daily ten-minute closing auctions o
 
 ### Approach 1: Calculate Target by Predicting its Core Components
 
-We focused on predicting the core components of the target, specifically $WAP_{t+60}$ and Index $WAP_{t+60}$. $WAP$ can be calculated as the following formula:
+We focused on predicting the core components of the target, specifically $WAP_{t+60}$ and $Index \, WAP_{t+60}$. $WAP$ can be calculated as the following formula:
 
 $$
 WAP = \frac{BidPrice \times AskSize + AskPrice \times BidSize}{BidSize + AskSize}
@@ -40,7 +40,7 @@ $$
 
 The process involved several key steps:
 
-- **Retrieving Stock Weights $w_i$ for Index $WAP$**: Index $WAP$ is a weighted sum of all 200 stocks' $WAP$. By applying linear regression ($R^2$ of 1.0) to the given WAP of all stocks, we successfully determined the precise weights constituting the index.
+- **Retrieving Stock Weights $w_i$ for $Index \, WAP$**: $Index \, WAP$ is a weighted sum of all 200 stocks' $WAP$. By applying linear regression ($R^2$ of 1.0) to the given WAP of all stocks, we successfully determined the precise weights constituting the index.
 - **Imputing Last-Minute WAP**: For each day, we only had WAP values for the first nine minutes; we used $target_t$ and $Index \, WAP_t$ which contain information of $WAP_{t+60}$ to impute the last-minute WAP by solving a linear optimization model on Gurobi. The distribution of imputed data is shown in the appendix, which aligns with its fluctuating nature around 1. This provided us with a complete set of $WAP_{t+60}$​ labels for prediction.
 - **Predicting $WAP_{t+60}$**: Each model described in section 6 was trained using the training dataset, employing $WAP_{t+60}$ as the labels. Predictions for $WAP_{t+60}$ were then made for every $t$ and every stock for the testing dataset. Subsequently, we calculated the targets using the following formula:
 
