@@ -32,6 +32,7 @@ Our dataset provides historical data for the daily ten-minute closing auctions o
 ### Approach 1: Calculate Target by Predicting its Core Components
 
 We focused on predicting the core components of the target, specifically $WAP_{t+60}$ and Index $WAP_{t+60}$. $WAP$ can be calculated as the following formula:
+
 $$
 WAP = \frac{BidPrice \times AskSize + AskPrice \times BidSize}{BidSize + AskSize}
 $$
